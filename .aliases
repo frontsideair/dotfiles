@@ -1,0 +1,10 @@
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
+alias mkcd='_(){ mkdir $1; cd $1; }; _'
+
+alias transfer.sh='_(){ curl --upload-file $1 https://transfer.sh/; }; _'
+alias ifconfig.co='curl ifconfig.co'
+
+forward() { ssh -L $1:127.0.0.1:$1 $2 -Nv; }
+toggleTilde() { if [ -e $1~ ]; then mv $1~ $1; else mv $1 $1~; fi }

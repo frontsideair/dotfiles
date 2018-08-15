@@ -1,7 +1,11 @@
 directories = []
-files = [ ".gitconfig"
+files = [ ".aliases"
+        , ".editorconfig"
+        , ".gitconfig"
+        , ".gitignore"
         , ".life"
         , ".profile"
         , ".ssh/config"
+        , ".tmux.conf"
         , ".vimrc"
         ]
