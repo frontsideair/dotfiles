@@ -2,5 +2,6 @@ directories = []
 files = [ ".gitconfig"
         , ".life"
         , ".profile"
+        , ".ssh/config"
         , ".vimrc"
         ]
