@@ -1,0 +1,45 @@
+[user]
+  email = photonia@gmail.com
+  name = Fatih Altinok
+  signingkey = photonia@gmail.com
+[core]
+  editor = vim
+  pager = diff-so-fancy | less -RFX
+  excludesfile = ~/.gitignore
+[push]
+  default = simple
+[pull]
+  rebase = true
+[rebase]
+  autostash = true
+[diff]
+  algorithm = minimal
+  compactionHeuristic = true
+  indentHeuristic = true
+  renames = true
+[alias]
+  tree = log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
+  recent = for-each-ref --count=10 --sort=-committerdate refs/heads/ --format="%(refname:short)"
+  praise = blame
+  co = checkout
+  st = status
+  rb = rebase
+  df = diff --color
+  dfc = diff --cached
+  br = branch
+  sub = submodule
+  cp = cherry-pick
+  y = stash
+[help]
+  autocorrect = 1
+[filter "lfs"]
+  required = true
+  smudge = git-lfs smudge -- %f
+  process = git-lfs filter-process
+  clean = git-lfs clean -- %f
+[merge]
+  conflictstyle = diff3
+[rerere]
+  enabled = true
+[commit]
+  gpgsign = true

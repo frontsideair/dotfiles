@@ -1,0 +1,6 @@
+directories = []
+files = [ ".gitconfig"
+        , ".life"
+        , ".profile"
+        , ".vimrc"
+        ]
